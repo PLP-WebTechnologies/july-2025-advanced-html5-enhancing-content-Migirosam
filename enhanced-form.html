@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        header, footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Enhanced HTML5 Page</h1>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Graphic Design</li>
+        <li>SEO Optimization</li>
+    </ul>
+
+    <h2>Pricing Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Web Development</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>Graphic Design</td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>SEO Optimization</td>
+                <td>$300</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Media Showcase</h2>
+    <figure>
+        <img src="natureexhibits.jpg" alt="Coconut Trees" width="300" height="280" />
+        <figcaption>Our latest project</figcaption>
+    </figure>
+    <audio controls>
+        <source src="audio/Yes I Do Mbagathi AY Choir.mp3.mp3" type="audio/mp3">
+    </audio>
+    <video width="320" height="240" controls>
+        <source src="video/Barzilai_song.mp4" type="video/mp4">
+    </video>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name <span style="color:red">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="Your full name" minlength="3">
+
+            <label for="email">Email <span style="color:red">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="\d{3}[-]\d{3}[-]\d{4}">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your message here..."></textarea>
+
+            <label for="service">Select a Service</label>
+            <select id="service" name="service" required>
+                <option value="">--Please choose an option--</option>
+                <option value="web">Web Development</option>
+                <option value="graphic">Graphic Design</option>
+                <option value="seo">SEO Optimization</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your Company Name</p>
+</footer>
+
+</body>
+</html>
